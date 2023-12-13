@@ -18,17 +18,15 @@ const resolvers = {
   Mutation: {
     login: async (parent, { email, password }) => {
       const user = await User.findOne({ email });
-
       if (!user) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError('Must Log In');
       }
 
       const correctPw = await user.isCorrectPassword(password);
 
       if (!correctPw) {
-        throw new AuthenticationError('Incorrect credentials');
+        throw new AuthenticationError('Must Log In');
       }
-
       const token = signToken(user);
 
       return { token, user };
@@ -50,7 +48,7 @@ const resolvers = {
         return updatedUser;
       }
 
-      throw new AuthenticationError('You need to be logged in!');
+      throw new AuthenticationError('Must Log In');
     },
     removeBook: async (parent, { bookId }, { user }) => {
       if (user) {
@@ -63,7 +61,7 @@ const resolvers = {
         return updatedUser;
       }
 
-      throw new AuthenticationError("You have to be logged in!");
+      throw new AuthenticationError("Must Log In");
     }
   }
 };
