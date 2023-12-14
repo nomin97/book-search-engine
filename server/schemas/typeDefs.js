@@ -26,6 +26,11 @@ const typeDefs = gql`
     image: String
     link: String
   }
+  
+  type Auth {
+    token: ID!
+    user: User
+  }
 
   type Query {
     me: User
@@ -36,11 +41,6 @@ const typeDefs = gql`
     addUser(username: String!, email: String!, password: String!): Auth
     saveBook(input: bookInput): User
     removeBook(bookId: ID!): User
-  }
-  
-  type Auth {
-    token: ID!
-    user: User
   }
 `;
 
