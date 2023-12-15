@@ -1,7 +1,8 @@
 # Book Search Engine Starter Code
   
 ## Description 
-This application comes with code but I refactor it to use GraphQl. Keeping track of what I'd changed and updated was tough because I was updating some of the existing code and forgot to delete some files so that threw up errors. Because there is a front end and backend and it uses react, I also had a lot of errors because it wouldn't pull the right mutations or query from one side. On deployment, I was having connectivity issues with mongoose and had to explore around more and decided to deploy with heroku instead of Render. 
+This application comes with code but I refactor it to use GraphQl. Keeping track of what I'd changed and updated was tough because I was updating some of the existing code and forgot to delete some files so that threw up errors. Because there is a front end and backend and it uses react, I also had a lot of errors because it wouldn't pull the right mutations or query from one side. I did have to go over it numerous times in case it was not fully refactored, and kept getting alot of errors. On deployment, there were a lot of factors to make it successful such as ip addresses, changing passwords, but in the end my classmate was able to help me figure it out and get deployed successfully. 
+
 
 ## Table of Contents
   - [Installation](#installation)
@@ -12,8 +13,8 @@ This application comes with code but I refactor it to use GraphQl. Keeping track
   - [Questions](#questions)
   
 ## Link
-https://mysterious-plains-12796-2ef69fe21024.herokuapp.com/
-  
+https://book-search-ctwb.onrender.com/
+
 ## Installation 
   Make sure all packages are installed correctly, and npm run develop to run both client and server folders. 
   
@@ -24,6 +25,7 @@ https://mysterious-plains-12796-2ef69fe21024.herokuapp.com/
   n/a
   
 ## Credits
+Tutor Corey and classmate Alaina for helping deployement. 
 
 ## Questions?
   * Email: <nominmyagmarsuren@yahoo.com>
